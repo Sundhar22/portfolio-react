@@ -1,10 +1,8 @@
-
-
 import React , {useState}from 'react'
 import './header.css'
 
 const Header = () => {
-
+    
     const[showMenu, setShowMenu] = useState(false)
 
   return (
