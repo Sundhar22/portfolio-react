@@ -1,6 +1,7 @@
 import React from 'react'
 import hi from "../../assets/hand.svg"
 import send from "../../assets/send.svg"
+import '../../App.css'
 function Data() {
     return (
         <div className="home__data">
@@ -18,8 +19,8 @@ function Data() {
                 A creative Flutter developer from India with a passion for crafting innovative apps and a drive to excel in React and DevOps.            
             </p>
             
-            <a href='#contact' className="home__button button           button--flex">
-                Say Hello <img  src={send} alt="send" />
+            <a href='#contact' className="home__button button button--flex">
+                Say Hello <img  className='button__icon' src={send} alt="send" />
             </a>
 
         </div>
