@@ -158,10 +158,10 @@ const Services = () => {
 
               <i className="uil uil-times services__modal-close" onClick={()=>openModal(0)}></i>
 
-              <h3 className="services__model-title"> Product Designer</h3>
+              <h3 className="services__model-title"> React Development</h3>
               
               <p className="services__model-description">
-              So, this line of code is creating a grid with a single column that adjusts its width based on the content it contains. This can be useful when you want a grid container to fit its content as closely as possible without causing overflow.
+              As I am learning React, I am capable of building interactive UI components for web applications, and even entire single-page applications.
               </p>
 
               <ul className="services__model-services grid">
@@ -170,7 +170,7 @@ const Services = () => {
                       
                   </i>
                   <p className="services__modal-info">
-                      I develop the User Interface
+                      I build interactive UI components using React
                   </p>
                 </li>
                 <li className="services__model-service">
@@ -178,7 +178,7 @@ const Services = () => {
                       
                   </i>
                   <p className="services__modal-info">
-                      Web page development 
+                  I create single-page applications using React.
                   </p>
                 </li>
                 <li className="services__model-service">
@@ -186,7 +186,7 @@ const Services = () => {
                       
                   </i>
                   <p className="services__modal-info">
-                    I create  ux element Interaction
+                  I manage state and props effectively in React.
                   </p>
                 </li>
                 <li className="services__model-service">
@@ -194,17 +194,10 @@ const Services = () => {
                       
                   </i>
                   <p className="services__modal-info">
-                          I position your company brand.
+                  I use React hooks for functional components.
                   </p>
                 </li>
-                <li className="services__model-service">
-                  <i className="uil uil-check-circle services__model-icon">
-                      
-                  </i>
-                  <p className="services__modal-info">
-                          Design and mockups of products for companies.
-                  </p>
-                </li>
+                
               </ul>
 
             </div>
