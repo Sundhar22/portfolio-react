@@ -197,9 +197,9 @@
   }
 
 
-  @media screen and (max-width :576px){}
-
-  
+  @media screen and (max-width :576px){
+    
+  }
   /* smaller devices */
   @media screen and (max-width :350px){
     :root{
@@ -216,5 +216,8 @@
       margin-right: var(--mb-1);
     }
   }
+
+
+  
 
 
