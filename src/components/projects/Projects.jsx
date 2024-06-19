@@ -1,35 +1,57 @@
-import React from 'react';
 import "./Project.css";
-import projectData from './data';
+import data from './data';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 function Projects() {
   return (
-    <section className="Projects section container" id="projects">
+    <section className="projects section container" id="projects">
           <h1 className="section__title">Projects</h1>
           <span className="section__subtitle">My personal Projects</span>
 
-         <div className="projects__container">
+         <Swiper className="projects__container"
+        loop={true}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          578: {
+            slidesPerView: 2,
+          },
+          
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          }
+        }}
+        modules={[Pagination]}         
+         >
             {
-                projectData.map(
-                    
+                data.map(                    
                     ({id,title,description,link,status})=>{
-                        return <div className="project__card" key={id}>
+                        return (
+                            <SwiperSlide className="project__card" key={id}>
+                                <h3>{title}</h3>
+                                <p>{description}</p>
+                                <div className="project__card-footer">
+                                <a href={link}>visit</a>
+                                <span> {status}</span>
+                                </div>
+                            </SwiperSlide>
 
-                            <h3 className="project__title">
-                                {title}
-                            </h3>
-                            <p className="project__description">
-                                {description}
-                            </p>
-                            <div className="projectCard__footer">
-                            <a href={link} className="project__visit">visit</a>
-                            <p>status-{status}</p>
-                            </div>
-                        </div>
+                        );
                     }
                 )
             }
-         </div>
+         </Swiper>
     </section>
   )
 }
