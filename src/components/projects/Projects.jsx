@@ -34,6 +34,8 @@ function Projects() {
         }}
         modules={[Pagination]}         
          >
+
+          
             {
                 data.map(                    
                     ({id,title,description,link,status})=>{
